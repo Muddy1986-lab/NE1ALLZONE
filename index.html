@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123c86">
+<title>NE1 อีสานทีม | Team Portal</title>
+<style>
+:root{--navy:#123c86;--blue:#1e63d5;--sky:#36a9e8;--red:#e53945;--orange:#f28c28;--green:#23a66f;--yellow:#f4c542;--ink:#182230;--muted:#657184;--line:#e8edf4;--bg:#f6f8fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}.hero{background:linear-gradient(120deg,#0d2e6e 0%,#1553b2 48%,#3188e8 100%);color:#fff;padding:28px 20px 34px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:#ffffff0d;right:-100px;top:-230px}.hero-inner{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:22px;position:relative;z-index:1}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#d7e8ff;font-weight:800}.hero h1{font-size:clamp(29px,5vw,46px);line-height:1.1;margin:8px 0 8px;font-weight:900}.hero p{margin:0;color:#e7f0ff;font-size:15px}.hero-art{width:min(40%,360px);min-width:210px;filter:drop-shadow(0 12px 18px #00194755)}.wrap{max-width:1120px;margin:0 auto;padding:22px 18px 48px}.toolbar{display:flex;gap:12px;align-items:center;margin:-42px 0 26px;position:relative;z-index:2}.search{background:white;border:1px solid #e1e8f2;box-shadow:0 8px 24px #102c5412;border-radius:15px;padding:13px 16px;display:flex;align-items:center;gap:10px;flex:1}.search input{border:0;outline:0;width:100%;font:inherit;font-size:15px;background:transparent}.pill{background:#fff;color:#42516a;border:1px solid #e3eaf4;border-radius:999px;padding:10px 14px;font-weight:750;font-size:13px;white-space:nowrap}.section{margin:30px 0}.section-head{display:flex;align-items:center;gap:12px;margin-bottom:15px}.section-mark{width:9px;height:34px;border-radius:9px;background:var(--section)}.section-head h2{font-size:clamp(19px,3vw,25px);margin:0;font-weight:900;letter-spacing:-.3px}.section-head p{margin:2px 0 0;color:var(--muted);font-size:12px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 3px 12px #1d35570a;min-width:0;transition:transform .18s,box-shadow .18s}.card:hover{transform:translateY(-2px);box-shadow:0 10px 24px #1d355714}.card-top{height:5px;background:var(--accent)}.card-body{padding:16px}.card-title-row{display:flex;align-items:center;gap:10px;margin-bottom:12px}.emoji{width:40px;height:40px;border-radius:12px;background:color-mix(in srgb,var(--accent) 12%,white);display:grid;place-items:center;font-size:21px;flex:0 0 auto}.card h3{font-size:16px;line-height:1.35;margin:0;font-weight:850}.card small{display:block;color:var(--muted);font-size:12px;margin-top:3px}.links{display:grid;gap:9px}.link{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 12px;border-radius:12px;background:var(--btn-bg,#f4f6fa);border:1px solid var(--btn-border,#e9edf3);font-weight:750;font-size:13px;transition:filter .15s,transform .15s;min-height:44px}.link:hover{filter:brightness(.97);transform:translateY(-1px)}.link .arrow{font-size:18px;opacity:.65;flex-shrink:0}.link.red{--btn-bg:#fff0f1;--btn-border:#ffd9dc;--btn-text:#c62835;color:#c62835}.link.blue{--btn-bg:#edf4ff;--btn-border:#d5e4ff;--btn-text:#1754b4;color:#1754b4}.link.sky{--btn-bg:#eaf8ff;--btn-border:#cceeff;--btn-text:#087eb9;color:#087eb9}.link.orange{--btn-bg:#fff4e8;--btn-border:#ffdfbd;--btn-text:#bd5a05;color:#bd5a05}.link.green{--btn-bg:#eaf9f1;--btn-border:#ccefdc;--btn-text:#168653;color:#168653}.link.yellow{--btn-bg:#fff9df;--btn-border:#f5e7a8;--btn-text:#8b6a00;color:#8b6a00}.link.dark{--btn-bg:#f0f2f5;--btn-border:#dce1e8;--btn-text:#222b39;color:#222b39}.link.gray{--btn-bg:#f2f4f7;--btn-border:#e1e5eb;--btn-text:#5d6675;color:#5d6675}.link.task{background:#fff;border-style:dashed;color:#344256}.link.task .arrow{font-size:13px}.split{display:grid;grid-template-columns:1fr 1fr;gap:10px}.split .link{min-height:62px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px}.split .link span:last-child{font-size:11px;opacity:.75;font-weight:650}.student-banner{background:linear-gradient(120deg,#e7fff1,#f5fff8);border:1px solid #ccefdc;border-radius:15px;padding:12px 14px;display:flex;align-items:center;gap:12px;margin-bottom:12px}.student-banner svg{width:62px;flex:0 0 auto}.student-banner strong{display:block;color:#18774d;font-size:13px}.student-banner span{font-size:11px;color:#53836c}.book-banner{display:flex;align-items:center;gap:11px;background:#fff9df;border:1px solid #f5e7a8;padding:12px;border-radius:14px;margin-bottom:12px}.book-banner .book{font-size:29px}.book-banner strong{display:block;color:#876400;font-size:13px}.book-banner span{font-size:11px;color:#8b7a3b}.routine-list{display:grid;gap:8px}.routine-item{display:flex;align-items:flex-start;gap:10px;background:#fff;border:1px solid #f0d6d8;border-radius:12px;padding:10px 11px;font-size:13px;font-weight:700}.num{background:#ffebed;color:#c62835;width:25px;height:25px;display:grid;place-items:center;border-radius:8px;flex:0 0 auto;font-size:12px}.footer{text-align:center;color:#8a95a5;font-size:12px;padding:10px 0 0}.empty{display:none;text-align:center;padding:30px;color:#68768a}.hidden{display:none!important}
+@media(max-width:850px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-art{width:34%;min-width:170px}}
+@media(max-width:560px){.hero{padding:24px 17px 52px}.hero-inner{align-items:flex-start}.hero-art{width:36%;min-width:110px;margin-top:15px}.hero p{font-size:13px}.wrap{padding:18px 12px 35px}.toolbar{margin-top:-35px;gap:7px}.pill{display:none}.cards{grid-template-columns:1fr;gap:11px}.section{margin:24px 0}.card-body{padding:14px}.card h3{font-size:15px}.split{gap:8px}.split .link{padding:10px}.section-head{margin-bottom:12px}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="hero-inner">
+  <div>
+   <div class="eyebrow">NE1 • ISAN TEAM</div>
+   <h1>NE1 อีสานทีม</h1>
+   <p>Team Portal · รวมลิงก์ทำงาน เครื่องมือ และความรู้<br>พร้อมใช้งานง่ายในหน้าเดียว</p>
+  </div>
+  <svg class="hero-art" viewBox="0 0 360 230" role="img" aria-label="ภาพประกอบหน้าร้าน SES">
+   <defs><linearGradient id="store" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dceaff"/></linearGradient><linearGradient id="awning" x1="0" x2="1"><stop stop-color="#ff5967"/><stop offset="1" stop-color="#e32945"/></linearGradient></defs>
+   <ellipse cx="182" cy="210" rx="148" ry="12" fill="#001f5b" opacity=".22"/>
+   <rect x="52" y="78" width="256" height="125" rx="8" fill="url(#store)"/>
+   <rect x="65" y="93" width="230" height="96" rx="3" fill="#eaf4ff"/>
+   <rect x="79" y="108" width="78" height="81" rx="3" fill="#a8d9ff"/>
+   <rect x="88" y="117" width="60" height="63" rx="2" fill="#d8f0ff"/>
+   <path d="M95 176 L95 130 Q118 110 141 130 L141 176Z" fill="#77b9f3"/>
+   <rect x="169" y="108" width="113" height="81" rx="3" fill="#c5e5ff"/>
+   <rect x="181" y="120" width="88" height="69" rx="2" fill="#f7fbff"/>
+   <rect x="191" y="131" width="28" height="48" rx="3" fill="#183f83"/>
+   <rect x="226" y="131" width="28" height="48" rx="3" fill="#2c70c9"/>
+   <path d="M42 78 L180 28 L318 78Z" fill="#fff"/>
+   <path d="M52 77 L180 32 L308 77" fill="none" stroke="#d7e8ff" stroke-width="3"/>
+   <rect x="42" y="73" width="276" height="26" rx="5" fill="url(#awning)"/>
+   <path d="M42 73 H318 L305 99 H55Z" fill="#f04a5b"/>
+   <path d="M75 74 L89 99 M116 74 L126 99 M157 74 L164 99 M198 74 L202 99 M239 74 L240 99 M280 74 L277 99" stroke="#fff" stroke-width="3" opacity=".85"/>
+   <rect x="112" y="44" width="136" height="28" rx="8" fill="#fff"/>
+   <text x="180" y="63" font-size="18" text-anchor="middle" font-weight="900" fill="#17458e">SES</text>
+   <circle cx="305" cy="38" r="21" fill="#ffd76d"/><path d="M297 38 l6 6 11 -13" stroke="#7b5800" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+   <path d="M24 132 q-14 -18 0 -31 q14 13 0 31 M331 151 q-14 -18 0 -31 q14 13 0 31" fill="#9ce5c2"/>
+  </svg>
+ </div>
+</header>
+<main class="wrap">
+ <div class="toolbar">
+  <label class="search"><span>🔎</span><input id="search" type="search" placeholder="ค้นหาเมนู เช่น โปรโมชั่น, Stock, Manpower..." aria-label="ค้นหาเมนู"></label>
+  <span class="pill">✨ เลือกเมนูเพื่อเปิดใช้งาน</span>
+ </div>
+ <div id="sections">
+  <section class="section" style="--section:#202938" data-section="operation sellout">
+   <div class="section-head"><span class="section-mark"></span><div><h2>Operation &amp; Sellout</h2><p>เครื่องมือขาย โปรโมชั่น และบริการลูกค้า</p></div></div>
+   <div class="cards">
+    <article class="card" style="--accent:#e53945" data-search="โปรโมชั่นอัปเดท รวมสื่อ สื่อประชาสัมพันธ์"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">📣</div><div><h3>โปรโมชั่น &amp; สื่อ</h3><small>Promotion &amp; Media</small></div></div><div class="links"><a class="link red" href="https://docs.google.com/spreadsheets/d/1LrkTCqw164P1-j5dkf5AD2Xb9JaNcQr0vbaS-Z99OYo/edit?usp=drivesdk" target="_blank" rel="noopener">โปรโมชั่นอัปเดท <span class="arrow">↗</span></a><a class="link red" href="https://drive.google.com/drive/folders/1uvvDJiTgciX73E2nltWuFphk0V6hG4iq?usp=sharing" target="_blank" rel="noopener">รวมสื่อต่างๆ <span class="arrow">↗</span></a></div></div></article>
+    <article class="card" style="--accent:#202938" data-search="ลงยอดขายรายวัน Shop Type SES SPS"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">📈</div><div><h3>ลงยอดขายรายวัน</h3><small>Daily Sellout · 2 Shop Types</small></div></div><div class="split"><a class="link blue" href="https://docs.google.com/spreadsheets/d/1rcYgyUOmtlMcjgT8cds9jb9nllWkSzBmqd5Bmy3sTH4/edit?usp=drivesdk" target="_blank" rel="noopener">SES <span>เปิดฟอร์ม ↗</span></a><a class="link sky" href="https://docs.google.com/spreadsheets/d/1bXpqdR4sEnRxpGLYj2eMds5nca-Inj9ChIWZXYfHX_0/edit?usp=drivesdk" target="_blank" rel="noopener">SPS <span>เปิดฟอร์ม ↗</span></a></div></div></article>
+    <article class="card" style="--accent:#f28c28" data-search="Samsung Finance Plus คำนวณงวดผ่อน เอกสาร"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">🧡</div><div><h3>Samsung Finance+</h3><small>ผ่อนชำระ &amp; เอกสาร</small></div></div><div class="links"><a class="link orange" href="https://muddy1986-lab.github.io/Muddy/" target="_blank" rel="noopener">คำนวณงวดผ่อน <span class="arrow">↗</span></a><a class="link orange" href="https://drive.google.com/drive/folders/1HHSSmjwykV5CHl9yxB8SiubIsLWMEz3t" target="_blank" rel="noopener">เอกสาร <span class="arrow">↗</span></a></div></div></article>
+    <article class="card" style="--accent:#23a66f" data-search="Student Campaign นักเรียน นักศึกษา สมัครลูกค้า Redeem ร้านค้า รุ่นที่ร่วม"><div class="card-top"></div><div class="card-body">
+     <div class="student-banner"><svg viewBox="0 0 72 72" aria-label="การ์ตูนนักเรียน" role="img"><circle cx="36" cy="36" r="34" fill="#d0f5df"/><path d="M19 32 Q18 14 36 14 Q54 14 53 32 L50 49 L22 49Z" fill="#263c69"/><path d="M22 32 Q21 22 36 22 Q51 22 50 32 L48 43 Q44 54 36 54 Q27 54 23 43Z" fill="#ffd7b0"/><path d="M21 29 Q24 10 42 17 Q52 19 53 29 Q43 26 37 20 Q30 28 21 29" fill="#25375e"/><circle cx="30" cy="35" r="2" fill="#26364e"/><circle cx="42" cy="35" r="2" fill="#26364e"/><path d="M31 42 Q36 47 41 42" fill="none" stroke="#d56d65" stroke-width="2" stroke-linecap="round"/><path d="M19 63 Q21 49 36 49 Q51 49 53 63" fill="#fff"/><path d="M31 51 L36 58 L41 51" fill="#23a66f"/><path d="M17 18 L22 8 L29 17" fill="#ffcc4d"/></svg><div><strong>Student Campaign 🎒</strong><span>สิทธิพิเศษสำหรับนักเรียนและนักศึกษา</span></div></div>
+     <div class="links"><a class="link green" href="https://student.thsamsungcampaign.com/" target="_blank" rel="noopener">สมัคร (ลูกค้า) <span class="arrow">↗</span></a><a class="link green" href="https://student.thsamsungcampaign.com/shop" target="_blank" rel="noopener">Redeem (ร้านค้า) <span class="arrow">↗</span></a><a class="link green" href="https://docs.google.com/spreadsheets/d/1LrkTCqw164P1-j5dkf5AD2Xb9JaNcQr0vbaS-Z99OYo/edit?usp=drivesdk" target="_blank" rel="noopener">รุ่นที่ร่วมรายการ <span class="arrow">↗</span></a></div>
+    </div></article>
+    <article class="card" style="--accent:#36a9e8" data-search="Samsung Care+ ซื้อประกัน เอกสาร สื่อ"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">🛡️</div><div><h3>Samsung Care+</h3><small>ประกัน &amp; ข้อมูลบริการ</small></div></div><div class="links"><a class="link sky" href="https://p2.samsungcareplus.com/partners#/" target="_blank" rel="noopener">ซื้อประกัน Care+ <span class="arrow">↗</span></a><a class="link sky" href="https://drive.google.com/drive/folders/1GruTWLlpfYAJo2Sfz0bGsMXbeRu9pvVF" target="_blank" rel="noopener">เอกสาร &amp; สื่อ <span class="arrow">↗</span></a></div></div></article>
+    <article class="card" style="--accent:#303744" data-search="เก่าแลกใหม่ Trade in ประเมินราคาเครื่อง เอกสารคู่มือ"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">♻️</div><div><h3>เก่าแลกใหม่</h3><small>Trade-in</small></div></div><div class="links"><a class="link dark" href="https://tradeplus.selloutplatform.com/" target="_blank" rel="noopener">ประเมินราคาเครื่องเบื้องต้น <span class="arrow">↗</span></a><a class="link dark" href="https://drive.google.com/drive/folders/1nmmo6qG-nZPPbLXNT5Etk_-0WA90D_1F" target="_blank" rel="noopener">เอกสารคู่มือ <span class="arrow">↗</span></a></div></div></article>
+   </div>
+  </section>
+  <section class="section" style="--section:#e1b322" data-section="knowledge training">
+   <div class="section-head"><span class="section-mark"></span><div><h2>Knowledge &amp; Training</h2><p>แหล่งเรียนรู้และคู่มือสำหรับทีม</p></div></div>
+   <div class="cards">
+    <article class="card" style="--accent:#f4c542" data-search="สื่อการเทรน ความรู้"><div class="card-top"></div><div class="card-body"><div class="book-banner"><span class="book">📚</span><div><strong>เรียนรู้ได้ทุกวัน</strong><span>Training &amp; Knowledge</span></div></div><div class="links"><a class="link yellow" href="https://drive.google.com/drive/folders/1c_IGgUKkREJ1fP4NPpAPzrKxdf96RUpx" target="_blank" rel="noopener">สื่อการเทรน &amp; ความรู้ <span class="arrow">↗</span></a></div></div></article>
+    <article class="card" style="--accent:#f4c542" data-search="รวมจุดขายสินค้า Product selling points"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">💡</div><div><h3>รวมจุดขายสินค้า</h3><small>Product Selling Points</small></div></div><div class="links"><a class="link yellow" href="https://drive.google.com/drive/folders/11qXXDlFVMYU9f0huGdO3tSG1X4wyBXp6" target="_blank" rel="noopener">เปิดคลังจุดขายสินค้า <span class="arrow">↗</span></a></div></div></article>
+    <article class="card" style="--accent:#f4c542" data-search="เอกสารโอนย้ายข้อมูล Smart Switch"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">📲</div><div><h3>เอกสารโอนย้ายข้อมูล</h3><small>Data Transfer</small></div></div><div class="links"><a class="link yellow" href="https://drive.google.com/drive/folders/1yXimH3dKAS-6DP5OVigVAfo71V4_ghPC" target="_blank" rel="noopener">เปิดเอกสาร <span class="arrow">↗</span></a></div></div></article>
+   </div>
+  </section>
+  <section class="section" style="--section:#1e63d5" data-section="operation display">
+   <div class="section-head"><span class="section-mark"></span><div><h2>Operation &amp; Display</h2><p>จัดการสื่อหน้าร้าน กำลังคน และอุปกรณ์</p></div></div>
+   <div class="cards">
+    <article class="card" style="--accent:#1e63d5" data-search="อัปเดท Stock POSM เบิก POSM"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">🧰</div><div><h3>POSM</h3><small>สื่อส่งเสริมการขายหน้าร้าน</small></div></div><div class="links"><a class="link blue" href="https://docs.google.com/spreadsheets/d/1GX_Yl-tbcmIaJE6u2Ehc8sP81BVpzMI187AHKtAgrcw/edit?usp=drivesdk" target="_blank" rel="noopener">อัปเดท Stock POSM <span class="arrow">↗</span></a><a class="link blue" href="https://docs.google.com/spreadsheets/d/1noDwz0mUW5_z_ukTZy-RzAW-GITLVfpGOcEWnE-XXS4/edit?usp=drivesdk" target="_blank" rel="noopener">เบิก POSM <span class="arrow">↗</span></a></div></div></article>
+    <article class="card" style="--accent:#202938" data-search="Manpower กำลังคน SES SPS"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">👥</div><div><h3>Manpower</h3><small>2 Shop Types</small></div></div><div class="split"><a class="link blue" href="https://docs.google.com/spreadsheets/d/1O9OqNaUgxqx8qdJbLyfoXsED15mfKabVDOaMuAZ5sbw/edit?usp=drivesdk" target="_blank" rel="noopener">SES <span>เปิดข้อมูล ↗</span></a><a class="link sky" href="https://docs.google.com/spreadsheets/d/1FT6PZ4NqIrZBZRIYJYUooawDVeeWA9IirT_ZXdqtP7A/edit?usp=drivesdk" target="_blank" rel="noopener">SPS <span>เปิดข้อมูล ↗</span></a></div></div></article>
+    <article class="card" style="--accent:#929baa" data-search="Planogram ผังจัดวางสินค้า"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">🗂️</div><div><h3>Planogram</h3><small>ผังการจัดวางสินค้า</small></div></div><div class="links"><a class="link gray" href="https://drive.google.com/drive/folders/1FmCeaXSArD9Qd3TkirZZjeaep-rvCC9C" target="_blank" rel="noopener">เปิด Planogram <span class="arrow">↗</span></a></div></div></article>
+    <article class="card" style="--accent:#e53945" data-search="Retailmode User Password รหัสผ่าน"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">🔐</div><div><h3>Retailmode &amp; User_Password</h3><small>ข้อมูลสำหรับการปฏิบัติงาน</small></div></div><div class="links"><a class="link red" href="https://drive.google.com/drive/folders/1UEh_QbiAsTzpM8kjhTX32q8PV8NbbfRr" target="_blank" rel="noopener">เปิดเอกสาร <span class="arrow">↗</span></a></div></div></article>
+   </div>
+  </section>
+  <section class="section" style="--section:#202938" data-section="daily weekly monthly งานแต่ละมื้อแต่ละเดย์">
+   <div class="section-head"><span class="section-mark"></span><div><h2>งานแต่ละมื้อแต่ละเดย์</h2><p>เช็กลิสต์งานประจำวัน ประจำสัปดาห์ และประจำเดือน</p></div></div>
+   <div class="cards">
+    <article class="card" style="--accent:#e53945" data-search="Day Daily งานประจำวัน Morning Brief อัปเดทสื่อ เช็คความพร้อม ทำยอด MCS Line NPS Database Live Space"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">☀️</div><div><h3>Day · งานประจำวัน</h3><small>Daily Checklist · แตะเพื่อเช็กงาน</small></div></div><div class="routine-list">
+     <label class="routine-item"><input type="checkbox"> <span class="num">1</span><span>Morning Brief 5–10 นาที</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">2</span><span>อัปเดทสื่อ &amp; เช็คความพร้อม</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">3</span><span>ทำยอดตามเป้ารายวัน</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">4</span><span>ลงยอดขาย MCS</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">5</span><span>รายงานยอดขายในกลุ่ม Line</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">6</span><span>ลงยอดในลิงก์</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">7</span><span>NPS / Database / Live Space</span></label>
+    </div></div></article>
+    <article class="card" style="--accent:#e53945" data-search="Weekly งานประจำสัปดาห์ Stock Feedback SCOPE APS Survey RDU Report FB Issue แจ้งซ่อม F1"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">🗓️</div><div><h3>Weekly · งานประจำสัปดาห์</h3><small>Weekly Checklist</small></div></div><div class="routine-list">
+     <label class="routine-item"><input type="checkbox"> <span class="num">1</span><span>อัปเดท Stock — <a style="color:#c62835;text-decoration:underline" href="https://docs.google.com/spreadsheets/d/1_1wyIIrRkHufXVTc2X5YwDPhdSzS2qUQwNsWEvzgnY8/edit?usp=drivesdk" target="_blank" rel="noopener">เปิดลิงก์ ↗</a></span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">2</span><span>เก็บ Feedback SES (S.C.O.P.E) — <a style="color:#c62835;text-decoration:underline" href="https://docs.google.com/forms/d/e/1FAIpQLSfPX1EtXzArRPTKvnFO32BM-hdUKb1WVLxAV7FtXE0Pyr5VIg/viewform" target="_blank" rel="noopener">เปิดฟอร์ม ↗</a></span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">3</span><span>เบิกสต๊อคเฉพาะ APS *ลิงก์กลาง SES — <a style="color:#c62835;text-decoration:underline" href="https://docs.google.com/spreadsheets/d/1Gg64kTPjv8SNasiPIdHkQXPfU7rpNVfYT6Cw-Z4-7HA/edit?usp=sharing" target="_blank" rel="noopener">เปิดลิงก์ ↗</a></span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">4</span><span>อัปเดท Survey RDU ผ่าน MCS</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">5</span><span>ส่ง Report Weekly FB &amp; Issue</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">6</span><span>Re-check : แจ้งซ่อม F1</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">7</span><span>ร้านที่มี ISSUE เตรียมข้อมูลตอบ Feedback</span></label>
+    </div></div></article>
+    <article class="card" style="--accent:#e53945" data-search="Monthly งานประจำเดือน Marketsize Internet Survey Manpower"><div class="card-top"></div><div class="card-body"><div class="card-title-row"><div class="emoji">📅</div><div><h3>Monthly · งานประจำเดือน</h3><small>Monthly Checklist</small></div></div><div class="routine-list">
+     <label class="routine-item"><input type="checkbox"> <span class="num">1</span><span>ลงยอด Marketsize</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">2</span><span>เช็ค Internet Survey ใน MCS</span></label>
+     <label class="routine-item"><input type="checkbox"> <span class="num">3</span><span>อัปเดท Manpower</span></label>
+    </div></div></article>
+   </div>
+  </section>
+ </div>
+ <div id="empty" class="empty">ไม่พบเมนูที่ค้นหา ลองใช้คำค้นอื่นดูนะครับ</div>
+ <div class="footer">NE1 อีสานทีม · Team Portal · ออกแบบเพื่อใช้งานได้ทั้งมือถือและคอมพิวเตอร์</div>
+</main>
+<script>
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{
+ const q=search.value.trim().toLocaleLowerCase();
+ let visibleCards=0;
+ document.querySelectorAll('.card').forEach(card=>{
+  const match=!q || (card.innerText+' '+(card.dataset.search||'')).toLocaleLowerCase().includes(q);
+  card.classList.toggle('hidden',!match);
+  if(match) visibleCards++;
+ });
+ document.querySelectorAll('.section').forEach(section=>{
+  const any=[...section.querySelectorAll('.card')].some(c=>!c.classList.contains('hidden'));
+  section.classList.toggle('hidden',!any);
+ });
+ document.getElementById('empty').style.display=visibleCards?'none':'block';
+});
+</script>
+</body>
+</html>
