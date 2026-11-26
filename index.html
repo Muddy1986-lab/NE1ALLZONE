@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NE1 TEAM ACCESS</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(145deg,#05080e,#111c2c);
+  font-family:Arial,sans-serif;color:white;padding:20px
+}
+.login{
+  width:100%;max-width:390px;text-align:center;
+  padding:38px 28px;background:#111923;
+  border:1px solid #293b50;border-radius:20px;
+  box-shadow:0 20px 60px #0008
+}
+.logo{font-size:38px;font-weight:900;letter-spacing:4px}
+.blue{color:#39a9ff}
+.sub{font-size:12px;letter-spacing:3px;color:#9aabba;margin:12px 0 35px}
+input{
+  width:100%;padding:15px;margin:8px 0;
+  border-radius:9px;border:1px solid #34475c;
+  background:#080e16;color:white;font-size:16px;
+  outline:none
+}
+input:focus{border-color:#39a9ff}
+button{
+  width:100%;padding:15px;margin-top:15px;
+  border:0;border-radius:9px;
+  background:#168de0;color:white;
+  font-size:16px;font-weight:bold;cursor:pointer
+}
+button:hover{background:#0875c2}
+#error{color:#ff6464;font-size:13px;margin-top:15px}
+.footer{font-size:11px;color:#68798a;margin-top:35px}
+</style>
+</head>
+<body>
+<div class="login">
+  <div class="logo">NE1<span class="blue"> TEAM</span></div>
+  <div class="sub">AUTHORIZED ACCESS ONLY</div>
+
+  <form id="loginForm">
+    <input id="username" placeholder="Username"
+      autocomplete="username" required>
+    <input id="password" type="password"
+      placeholder="Password"
+      autocomplete="current-password" required>
+    <button type="submit">SIGN IN →</button>
+  </form>
+
+  <div id="error"></div>
+  <div class="footer">NE1 ISAN TEAM · INTERNAL PORTAL</div>
+</div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit",function(e){
+  e.preventDefault();
+
+  const user=document.getElementById("username").value;
+  const pass=document.getElementById("password").value;
+
+  if(user==="Samsung" && pass==="S@msung"){
+    sessionStorage.setItem("ne1_access","authorized");
+    window.location.href="home.html";
+  }else{
+    document.getElementById("error").textContent=
+      "Username หรือ Password ไม่ถูกต้อง";
+  }
+});
+</script>
+</body>
+</html>
